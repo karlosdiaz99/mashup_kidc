@@ -1,40 +1,27 @@
-#div-videos{
+#videos{
 	float:left;
 	margin-left: 2%;
 	height: 120px;
     width: 96%;
 }
-#controles{
+#conten{
 	float:left;
 	margin-left: 10%;
 	height: 40px;
     width: 80%;
 }
-
-#map{
+#mapse{
 	float: left;
 	margin-left: 10%;
     height: 350px;
     width: 80%;
-	
 	    border-top-style: solid;
 	border-right-style: solid;
 	border-bottom-style: solid;
 	border-left-style: solid;
-
-
-
 }
 
-#fecha{
-	float: left;
-	margin-left: 1%;
-    height: 350px;
-    width: 20%;
-
-}
-
-#tablatweets{
+#tweets{
 	float: left;
 	margin-left: 0%;
     height: 0px;
@@ -44,12 +31,9 @@
 	border-right-style: solid;
 	border-bottom-style: solid;
 	border-left-style: solid;
-
-
- 
 }
 
-#query, #cantidad{
+#query, #canti{
 	width: 20%;
 }
 
