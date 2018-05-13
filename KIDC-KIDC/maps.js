@@ -31,7 +31,7 @@ function marcarTweets(latitud, longitud, informacion){
         });
         var marker = new google.maps.Marker({
           position: uluru,
-          mapse: map,
+          map: map,
           icon: image
         });
         marker.addListener('click', function() {
