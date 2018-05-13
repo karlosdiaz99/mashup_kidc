@@ -2,10 +2,6 @@ var CLIENT_ID = '932121512497-b3m8oi0ldfvlv0n9t0b7dv2evl9f9a88.apps.googleuserco
 var API_KEY = 'AIzaSyAlFaYtg7D3_A6AKK2wNvsnWJYSjsxDR7Q';
 var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 var SCOPES = "https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/calendar ";
-var authorizeButton = document.getElementById('authorize-button');
-var signoutButton = document.getElementById('signout-button');
-
-
 
 function handleClientLoad() {
   gapi.load('client:auth2', initClient);
@@ -30,7 +26,6 @@ function handleAuthClick(event) {
 function handleSignoutClick(event) {
         gapi.auth2.getAuthInstance().signOut();
       }
-
 
 function funcionAgregar(titulo){
     var _inicio = document.getElementById("inicio").value;
