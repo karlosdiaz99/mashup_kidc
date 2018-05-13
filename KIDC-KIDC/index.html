@@ -17,11 +17,12 @@
 
   <body style="background-color:#000000;">
     <div class="card-panel  #00695c teal darken-3" >
-      <button  id="authorize-button" class="waves-effect waves-light btn #000000 black" >Authorize</button>
+
       
       <input type="text" id="query"  placeholder="Elemento a buscar">
       <input type="text" id="cantidad"  placeholder="Cantidad">
       <button onclick="search()" class="waves-effect waves-light btn #000000 black" id="search-button">Aceptar</button>
+            <button  id="authorize-button" class="waves-effect waves-light btn #000000 black" >Authorize</button>
     </div>
     <div id=map>
     </div>
@@ -36,15 +37,24 @@
       <button  onclick="botonAtras()" id="authorize-button" class="waves-effect waves-light btn #000000 black" >Atras</button>
       <button onclick="botonSiguiente()" id="signout-button" class="waves-effect waves-light btn #000000 black" >Siguiente</button>
     </div>
-    
-    <div id="tablatweets" style="overflow-y:auto;"> 
+        <div id="tablatweets" style="overflow-y:auto;"> 
       <table class="centered">
-
+        <thead>
+          <tr>
+            <th>Tweets</th>
+            <th>Agregar a Calendar</th>
+          </tr>
+        </thead>
         <tbody id="tcuerpot">
         </tbody>
       </table>
-    </div>   
-    
+    </div>
+    <div id="fecha">
+      <label>Inicio</label>
+      <input type="text" id="inicio" value='2018-04-16T10:40:00-06:00'>
+      <label>Fin</label>
+      <input  type="text" id="fin"   value='2018-04-16T11:40:00-07:00'>
+    </div>
             
     <script async defer src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()">
