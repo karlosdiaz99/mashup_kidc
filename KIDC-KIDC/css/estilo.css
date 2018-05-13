@@ -16,6 +16,12 @@
 	margin-left: 10%;
     height: 350px;
     width: 40%;
+	
+	    border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+
 
 
 }
@@ -31,8 +37,14 @@
 #tablatweets{
 	float: left;
 	margin-left: 10%;
-    height: 350px;
-    width: 40%;
+    height: 0px;
+    width: 0%;
+	
+	    border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+
 
  
 }
