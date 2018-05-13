@@ -1,6 +1,6 @@
 #div-videos{
 	float:left;
-	margin-left: 5%;
+	margin-left: 0%;
 	height: 120px;
     width: 96%;
 }
@@ -13,7 +13,7 @@
 
 #map{
 	float: left;
-	margin-left: 5%;
+	margin-left: 0%;
     height: 350px;
     width: 90%;
 
@@ -25,7 +25,7 @@
 
 #fecha{
 	float: left;
-	margin-left: 1%;
+	margin-left: 0%;
     height: 350px;
     width: 20%;
 
