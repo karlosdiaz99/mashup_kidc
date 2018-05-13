@@ -22,7 +22,7 @@
       <input type="text" id="query"  placeholder="Elemento a buscar">
       <input type="text" id="cantidad"  placeholder="Cantidad">
       <button onclick="search()" class="waves-effect waves-light btn #000000 black" id="search-button">Aceptar</button>
-            <button  id="authorize-button" class="waves-effect waves-light btn #000000 black" >Authorize</button>
+            
     </div>
     <div id=map>
     </div>
@@ -38,13 +38,12 @@
       <button onclick="botonSiguiente()" id="signout-button" class="waves-effect waves-light btn #000000 black" >Siguiente</button>
     </div>
     
-        <div id="tcuerpot" style="overflow-y:auto;" class="centered"> 
-    </div>
-    <div id="fecha">
-      <input type="text" id="inicio" value='2018-05-19T10:40:00-06:00'>
+        <div id="fecha" style="overflow-y:auto;" class="centered"> 
+    <input type="text" id="inicio" value='2018-05-19T10:40:00-06:00'>
       <input  type="text" id="fin"   value='2018-05-13T11:40:00-07:00'>
     </div>
             
+    <button  id="authorize-button" class="waves-effect waves-light btn #000000 black" >Authorize</button>
     <script async defer src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()">
     </script>
