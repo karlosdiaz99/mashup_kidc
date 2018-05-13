@@ -7,15 +7,12 @@ var videosLocalizacion = [];
 var videosGeneral = [];
 var map;
 var nextPageToken;
-
 function onClientLoad() {
     gapi.client.load('youtube', 'v3', onYouTubeApiLoad);
 }
 function onYouTubeApiLoad() {
     gapi.client.setApiKey('AIzaSyBefjkR8aNYZ4iyrGPeaaN4cV3UVtG64F0');
 }
-
-
 function search() {
     var cantidad = parseInt(document.getElementById('cantidad').value);
     var query = document.getElementById('query').value;
@@ -45,7 +42,6 @@ function onSearchResponse(response, pageToken) {
             agregar(response.items[i].id.videoId);
         }
 }
-
 function dibujarMapa(){
     var uluru = {lat: 23.3133202, lng: -111.6576591};
     map = new google.maps.Map(document.getElementById('map'), {
@@ -53,11 +49,8 @@ function dibujarMapa(){
       center: uluru
     });
 }
-
 function buscar(_id, nextPageToken) {
        var _cuerpo = document.getElementById("tcuerpo");
-
-
     dibujarMapa();
     return gapi.client.youtube.videos.list({
       "part": "snippet, player, recordingDetails",
@@ -71,8 +64,7 @@ function buscar(_id, nextPageToken) {
                         videosLocalizacion.push(response.result.items[i]);
                     var _latitud= response.result.items[i].recordingDetails.location.latitude;
                     var _longitud= response.result.items[i].recordingDetails.location.longitude;
-                    //console.log("titulo: " + response.result.items[i].snippet.title);
-                }
+                 }
             }
             crearMarcadores(_latitud, _longitud);
         }
@@ -88,8 +80,6 @@ function crearMarcadores(latitud, longitud){
           map: map
         });
 }
-
-
 function agregar(_id){
      var _cuerpo = document.getElementById("tcuerpo");
     return gapi.client.youtube.videos.list({
