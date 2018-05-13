@@ -28,25 +28,6 @@ function buscarTweets(){
                 var lng = response.statuses[i].coordinates.coordinates[0];
                 marcarTweets(lat,lng, titulo);
               }
-
-            var _fila = document.createElement("tr");
-            var _celda = document.createElement("td");
-            var _pararfo = document.createElement("p");
-            //console.log("dentro del for");
-            _pararfo.textContent = titulo;
-            _celda.appendChild(_pararfo);
-            _fila.appendChild(_celda);
-
-            var _celda = document.createElement("td");
-            var _botonAgregar = document.createElement("button");
-            _botonAgregar.textContent="Agregar";
-            
-            _botonAgregar.id = i;
-            _botonAgregar.addEventListener("click", function(obj_evento){funcionAgregar(titulo);},false);
-            _celda.appendChild(_botonAgregar);
-            _fila.appendChild(_celda); 
-
-            _cuerpo.appendChild(_fila);
           }
         }
     );
