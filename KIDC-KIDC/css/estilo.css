@@ -1,14 +1,26 @@
-#videostot{
+#div-videos{
 	float:left;
-	margin-left: 2%;
+	margin-left: 30%;
 	height: 120px;
     width: 96%;
 }
-#conten{
+#controles{
 	float:left;
 	margin-left: 10%;
 	height: 40px;
     width: 80%;
+}
+
+#map{
+	float: left;
+	margin-left: 5%;
+    height: 350px;
+    width: 90%;
+
+    border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
 }
 
 #fecha{
@@ -19,30 +31,19 @@
 
 }
 
-#mapse{
+#tablatweets{
 	float: left;
 	margin-left: 10%;
     height: 350px;
-    width: 80%;
-	    border-top-style: solid;
+    width: 60%;
+
+    border-top-style: solid;
 	border-right-style: solid;
 	border-bottom-style: solid;
 	border-left-style: solid;
 }
 
-#tweets{
-	float: left;
-	margin-left: 0%;
-    height: 0px;
-    width: 0%;
-	
-	    border-top-style: solid;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-}
-
-#query, #canti{
+#query, #cantidad{
 	width: 20%;
 }
 
