@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="codebird.js" type="text/javascript"></script>
+    <script src="maps.js" type="text/javascript"></script>
+    <script src="youtube.js" type="text/javascript"></script>
+    <script src="twitter.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+    <title>MASHUP_KIDC</title>
+    </style>
+  </head>
+
+  <body style="background-color:#000000;">
+    <div class="card-panel  #00695c teal darken-3" >
+      <button  id="authorize-button" class="waves-effect waves-light btn #000000 black" >Authorize</button>
+      
+      <input type="text" id="query"  placeholder="Elemento a buscar">
+      <input type="text" id="cantidad"  placeholder="Cantidad">
+      <button onclick="search()" class="waves-effect waves-light btn #000000 black" id="search-button">Aceptar</button>
+    </div>
+    <div id=map>
+    </div>
+    <div id=div-videos>
+      <table>
+        <tbody>
+          <tr style="overflow-y:auto;" id="videos"></tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="controles">
+      <button  onclick="botonAtras()" id="authorize-button" class="waves-effect waves-light btn #000000 black" >Atras</button>
+      <button onclick="botonSiguiente()" id="signout-button" class="waves-effect waves-light btn #000000 black" >Siguiente</button>
+    </div>
+    
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()">
+    </script>
+    <script type="text/javascript" src="calendar.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLNFueaYp3ERtKrGEl_3MH6RQgsbzrwt4">
+    </script>
+  </body>
+</html>

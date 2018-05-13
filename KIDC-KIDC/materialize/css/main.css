@@ -1,0 +1,54 @@
+.divInput{
+  width:70%;
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-top: 2%;
+}
+
+.carrusel{
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#fondo{
+  background-color: #FAFAFA;
+ background-image: url(../recursos/EntradaITO.jpg);
+  background-attachment: fixed;
+  height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+  margin-left: 15%;
+  margin-right: 15%;
+ display: block;
+    margin: auto;
+    /*width: 50%;*/
+}
+
+#busqueda{
+  margin: auto;
+    width: 30%;
+    padding: 10px;
+    background-color: white;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.titulo{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+ background-color: #f18973;
+}
+
+.contenedor{
+    margin-left: 15%;
+  margin-right: 15%;
+}
+
+#boton{
+  margin-left: 400px;
+}
