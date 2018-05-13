@@ -1,6 +1,6 @@
 var cb =new Codebird();
-cb.setConsumerKey ( "fIYHQFmWMIneBV0MDjNmtcTMi" , "UPbodlqSYaAxliKWAq6LjQHarBd9jI4CIejoU2hvcsAkowGkqn" );
-cb.setToken("842057213246087173-7sqx77fEBMwKggGkNqtcrHy0NHMtVgm", "hcK6wLvJAn4SITKqo1mYuFfpariVZtzw2zY1IrKoKaUQ5");
+cb.setConsumerKey ( "XDRdKxPJOK8ClzUVl6RKAlaRc" , "23GZxIl0kW11fT4o7zFFOI4vTVwF8Y9EMthBrNJEprES9U3BSB" );
+cb.setToken ( "842057213246087173-ZdEsCIi7gm0fUF166Rw4KCSqfBi0Jw9", "cKlTbMJ4h61LxRBsuKomryy94bKhgvwnxqJxeYBWAFuBk");
 
 function buscarTweets(){
     //var query = document.getElementById('query').value;
