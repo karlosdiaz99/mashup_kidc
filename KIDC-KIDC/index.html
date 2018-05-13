@@ -42,16 +42,23 @@
       <button onclick="botonSiguiente()" id="signout-button" class="waves-effect waves-light btn #000000 black" >Siguiente</button>
     </div>
     
+    <div id="tablatweets" style="overflow-y:auto;"> 
+      <table class="centered">
+        <thead>
+          <tr>
+            <th>Tweets</th>
+            <th>Agregar a Calendar</th>
+          </tr>
+        </thead>
+        <tbody id="tcuerpot">
+        </tbody>
+      </table>
+    </div>
     <div id="fecha">
       <label>Inicio</label>
       <input type="text" id="inicio" value='2018-04-16T10:40:00-06:00'>
       <label>Fin</label>
-      <input  type="text" id="fin"   value='2018-05-36T11:40:00-07:00'>
-      
-      <div id="tcuerpot" class="centered"> 
-     
-    </div>
-
+      <input  type="text" id="fin"   value='2018-04-16T11:40:00-07:00'>
     </div>
        
     <button  id="authorize-button" class="waves-effect waves-light btn #000000 black" >Authorize</button>
